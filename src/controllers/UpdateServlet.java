@@ -60,7 +60,7 @@ public class UpdateServlet extends HttpServlet {
                 request.setAttribute("task", m);
                 request.setAttribute("errors", errors);
 
-                RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/new.jsp");
+                RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/edit.jsp");
                 rd.forward(request, response);
             } else {
                 // データベースに保存
